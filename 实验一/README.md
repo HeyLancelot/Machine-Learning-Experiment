@@ -33,14 +33,18 @@
 ### 实验导入的模块
 
 import pandas as pd
+
 import numpy as np
+
 import csv
+
 import glob
+
 import math
 
 ---
 
-### 实验需要的文件
+### 文件说明
 
 data1.xlsx：实验提供的数据源1
 
@@ -57,6 +61,8 @@ data5.csv: 清洗数据完成的文件
 machine study1.py：进行数据集成、清洗的源py
 
 machine study1 answer1.py：回答实验题目的py文件
+
+实验结果.jpg：存放实验一题目的回答截图
 
 ---
 
