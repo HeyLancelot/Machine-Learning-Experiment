@@ -87,11 +87,8 @@ machine study1 answer1.py：回答实验题目的py文件
 xlsx_to_csv_pd()：将数据源1（xlsx格式）转化成（csv）格式
 
 ```
-
-    def xlsx_to_csv_pd():
-    
-    data_xls = pd.read_excel('data1.xlsx', index_col=0)
-    
+def xlsx_to_csv_pd():
+    data_xls = pd.read_excel('data1.xlsx', index_col=0)    
     data_xls.to_csv('data1.csv', encoding='utf-8')
 ```
 
