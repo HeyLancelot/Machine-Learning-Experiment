@@ -84,7 +84,14 @@ machine study1 answer1.py：回答实验题目的py文件
 
 #### machine study1.py
 
-xlsx_to_csv_pd()：将数据源1（xlsx格式）转化成（csv）格式
+(```)xlsx_to_csv_pd()：将数据源1（xlsx格式）转化成（csv）格式
+
+    def xlsx_to_csv_pd():
+    
+    data_xls = pd.read_excel('data1.xlsx', index_col=0)
+    
+    data_xls.to_csv('data1.csv', encoding='utf-8')
+(```)
 
 findnan()：将C1-C9课程中存在nan类型转换成0
 
@@ -97,15 +104,6 @@ xiefangcha(j)：计算协方差，并返回
 ---
 
 ### 调用的函数库
-
-(```)
-
-    def xlsx_to_csv_pd():
-    
-    data_xls = pd.read_excel('data1.xlsx', index_col=0)
-    
-    data_xls.to_csv('data1.csv', encoding='utf-8')
-(```)
 
 pd.read_excel()：读取xlsx文件
 
