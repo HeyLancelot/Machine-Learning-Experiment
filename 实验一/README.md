@@ -79,3 +79,35 @@ machine study1 answer1.py：回答实验题目的py文件
 将数据上面存在重复的删除，对缺失的部分通过另一个数据源中的数据补充，如果两个数据源中都无法补充，计算当前列的均值，将均值补充到缺失的值
 
 ---
+
+### 函数说明
+
+#### machine study1.py
+
+xlsx_to_csv_pd()：将数据源1（xlsx格式）转化成（csv）格式
+
+findnan()：将C1-C9课程中存在nan类型转换成0
+
+get_avg(datag,i)：计算数值的均值，并返回
+
+#### machine study1 answer1.py
+
+xiefangcha(j)：计算协方差，并返回
+
+---
+
+### 调用的函数库
+
+pd.read_excel()：读取xlsx文件
+
+to_csv()：保存csv文件
+
+pd.read_csv()：读取csv文件
+
+pd.concat()：连接两个DataFrame
+
+drop_duplicates()：删除重复值
+
+math.isnan():判断是否是nan类型
+
+---
