@@ -98,6 +98,12 @@ xiefangcha(j)：计算协方差，并返回
 
 ### 调用的函数库
 
+(```)
+    def xlsx_to_csv_pd():
+    data_xls = pd.read_excel('data1.xlsx', index_col=0)
+    data_xls.to_csv('data1.csv', encoding='utf-8')
+(```)
+
 pd.read_excel()：读取xlsx文件
 
 to_csv()：保存csv文件
