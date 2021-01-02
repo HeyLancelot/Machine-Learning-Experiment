@@ -21,3 +21,35 @@
 4. 学习成绩和体能测试成绩，两者的相关性是多少？（九门课的成绩分别与体能成绩计算相关性）
 
 ---
+
+### 实验环境
+
+编译器:PyCharm2020.2.3
+
+作业环境:Python 3.8
+
+---
+
+### 实验导入的模块
+
+import pandas as pd
+import numpy as np
+import csv
+import glob
+import math
+
+---
+
+### 实验需要的文件
+
+data1.xlsx：实验提供的数据源1
+
+data1.csv：转换成csv格式
+
+data2.csv：实验的数据源2
+
+data3.csv：将两个数据源合同在一起
+
+data4.csv：将两个数据源的数据规范化
+
+data5.csv:清洗数据完成的文件
