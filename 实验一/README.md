@@ -94,11 +94,53 @@ def xlsx_to_csv_pd():
 
 findnan()：将C1-C9课程中存在nan类型转换成0
 
+```
+def findnan():
+    for i in range(len(lance)):
+        for j in range(9):
+            if math.isnan(lance.iloc[i, j + 5]) == True:
+                lance.iloc[i, j + 5] = 0
+```
+
 get_avg(datag,i)：计算数值的均值，并返回
+
+```
+def get_avg(datag,i):
+    sums=0
+    for j in range(len(datag)):
+        sums=sums+datag.iloc[j,i]
+    avgs=sums/len(datag)
+    return avgs
+```
 
 #### machine study1 answer1.py
 
-xiefangcha(j)：计算协方差，并返回
+xiefangcha(j)：计算相关系数，并返回
+
+```
+def xiefangcha(j):
+    C_sum = 0
+    for i in range(len(lance)):
+        C_sum = C_sum + lance.iloc[i, j]
+    C_avg = C_sum / len(lance)
+    pingfang = 0
+    for i in range(len(lance)):
+        pingfang = (lance.iloc[i, j] - C_avg) ** 2 + pingfang
+    stand_C = 0
+    stand_C = (pingfang / len(lance)) ** 0.5
+    xiefangcha = 0
+    for i in range(len(lance)):
+        xiefangcha = lance.iloc[i, j] * lance.iloc[i, 15] + xiefangcha
+    xiefangcha=xiefangcha/len(lance)
+    a=xiefangcha
+    b=Con_avg * C_avg
+    #finalxie = float(xiefangcha - (Con_avg * C_avg))
+    finalxie=(a-b)*len(lance)
+    C_Con = finalxie / (stand_C * stand_Con)
+    k=abs(C_Con)
+    k=float(k)
+    return k
+```
 
 ---
 
