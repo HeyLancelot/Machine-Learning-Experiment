@@ -14,21 +14,6 @@
 
 **参考**
 
-数据库中Stu表数据
-
-ID	Name	City	Gender	Height	C1	...	C10	Constitution
-1	Sun	Beijing	boy	160	87		9	good
-2	Zhu	Shenzhen	girl	177	66		8	excellent
-...	...	...	...	...	...	...	...	...
-
-student.txt中
-
-ID		Name	City		Gender	Height    C1	。。。	C10	        Constitution
-202001	Sun		Beijing	male		180	      87	。。。	9		good
-202003 	Tang		Hanghai	male		156	      91	。。。	10	        general
-...		...		...		..		...	..		...		...		...
-
-
 两个数据源合并后读入内存，并统计：
 1. 学生中家乡在Beijing的所有课程的平均成绩。
 2. 学生中家乡在广州，课程1在80分以上，且课程9在9分以上的男同学的数量。(备注：该处做了修正，课程10数据为空，更改为课程9)
